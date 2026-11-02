@@ -1,0 +1,453 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Lindsay Parker CV</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: full-width name band, then a reading column with a narrow reference column beside it; stacks on phones. */
+:root {
+  --bg: #F2F4F6;
+  --surface: #FFFFFF;
+  --fg: #14181F;
+  --muted: #55606E;
+  --line: #D8DEE5;
+  --accent: #0A6C74;
+  --accent-soft: #D9EEEE;
+  --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0D1115;
+    --surface: #141A20;
+    --fg: #E8ECF1;
+    --muted: #9AA5B3;
+    --line: #26303A;
+    --accent: #5CCBC3;
+    --accent-soft: #15363A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0D1115;
+  --surface: #141A20;
+  --fg: #E8ECF1;
+  --muted: #9AA5B3;
+  --line: #26303A;
+  --accent: #5CCBC3;
+  --accent-soft: #15363A;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Name band */
+.band { background: var(--surface); border-bottom: 1px solid var(--line); }
+.band .wrap { padding-block: 40px 28px; display: grid; gap: 20px; }
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 3.9rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+.role { font-size: 1.1rem; color: var(--muted); margin: 0; max-width: 40rem; text-wrap: balance; }
+.contact { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 0; padding: 0; list-style: none; font-size: 14px; }
+.contact li { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.contact .lab { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.contact .val { overflow-wrap: anywhere; }
+.copy {
+  font: inherit;
+  font-size: 12px;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.copy:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Highlight filter */
+.filter { padding-block: 20px 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.filter .lab { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.status { font-size: 13px; color: var(--muted); margin: 0; }
+
+/* Page grid */
+.page { display: grid; gap: 40px; padding-block: 28px 56px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 880px) {
+  .page { grid-template-columns: minmax(0, 1fr) 17rem; gap: 56px; }
+}
+.main, .side { min-width: 0; }
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+section + section { margin-top: 36px; }
+.profile { font-size: 1.02rem; max-width: 42rem; margin: 0; }
+
+h3 { font-size: 13px; font-family: var(--font-mono); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); margin: 22px 0 6px; }
+h3:first-of-type { margin-top: 0; }
+
+ul.pts { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+ul.pts li {
+  position: relative;
+  padding-left: 18px;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+ul.pts li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.7em;
+  width: 7px;
+  height: 2px;
+  background: var(--accent);
+}
+ul.pts li.dim { opacity: 0.38; }
+ul.pts li.hit { background: var(--accent-soft); border-radius: 3px; }
+
+/* Experience */
+details.job { border-bottom: 1px solid var(--line); padding-block: 14px; }
+details.job:first-of-type { padding-top: 0; }
+details.job summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  gap: 2px 16px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+}
+details.job summary::-webkit-details-marker { display: none; }
+.job-title { font-weight: 600; font-size: 1.02rem; }
+.job-org { color: var(--muted); grid-column: 1; }
+.job-date { font-family: var(--font-mono); font-size: 12px; color: var(--muted); grid-column: 2; grid-row: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.job-toggle { font-family: var(--font-mono); font-size: 12px; color: var(--accent); grid-column: 2; grid-row: 2; text-align: right; }
+.job-toggle::after { content: "hide"; }
+details.job:not([open]) .job-toggle::after { content: "show"; }
+details.job ul.pts { margin-top: 10px; }
+@media (max-width: 520px) {
+  details.job summary { grid-template-columns: minmax(0, 1fr); }
+  .job-date, .job-toggle { grid-column: 1; grid-row: auto; text-align: left; }
+}
+
+/* Side column */
+.side section { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
+.side section + section { margin-top: 16px; }
+.side h2 { font-size: 1.05rem; }
+.side p, .side li { font-size: 14px; margin: 0; }
+.side ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.side .sub { color: var(--muted); font-size: 13px; }
+
+@media (prefers-reduced-motion: reduce) { ul.pts li { transition: none; } }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <p class="kicker">Curriculum vitae</p>
+    <h1>Lindsay Parker</h1>
+    <p class="role">Forward-deployed solutions consultant. Nine years owning enterprise CRM engagements, now building with AI.</p>
+    <ul class="contact">
+      <li><span class="lab">Based</span><span class="val">London, UK</span></li>
+      <li><span class="lab">Phone</span><span class="val" id="v-phone">07981 322936</span><button class="copy" type="button" data-target="v-phone">Copy</button></li>
+      <li><span class="lab">Email</span><span class="val" id="v-email">parker.lindsayb@gmail.com</span><button class="copy" type="button" data-target="v-email">Copy</button></li>
+      <li><span class="lab">LinkedIn</span><a class="val" href="https://linkedin.com/in/parkerlindsayb">linkedin.com/in/parkerlindsayb</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="filter">
+    <span class="lab">Highlight</span>
+    <div class="chips" id="chips">
+      <button class="chip" type="button" data-tag="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-tag="client" aria-pressed="false">Client-facing</button>
+      <button class="chip" type="button" data-tag="build" aria-pressed="false">Building solutions</button>
+      <button class="chip" type="button" data-tag="ai" aria-pressed="false">AI</button>
+      <button class="chip" type="button" data-tag="enable" aria-pressed="false">Training and adoption</button>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </div>
+
+  <div class="page">
+    <div class="main">
+      <section>
+        <h2>Profile</h2>
+        <p class="profile">Forward-deployed solutions consultant with nine years' experience owning enterprise CRM engagements from discovery through build, adoption and expansion. I have worked on the legacy side of the GTM stack in global, multi-cloud, multi-brand orgs (900+ licences), and now build with AI: I hold the Anthropic Claude Certified Architect certification (CCAR-F) and have built a custom analytics agent that combines Salesforce platform depth with Anthropic's models. I am the single accountable contact for C-level sponsors, and I move between GTM strategy conversations and hands-on workflow, data-pipeline and integration design.</p>
+      </section>
+
+      <section>
+        <h2>Where I add value</h2>
+        <h3>Winning and shaping deals</h3>
+        <ul class="pts">
+          <li data-t="client">Facilitated strategic workshops and requirements sessions directly with C-level executives, translating business needs into technical roadmaps and architecture documentation.</li>
+          <li data-t="client">Delivered progress demos that secured business buy-in and positive UAT outcomes, and ran weekly stakeholder sessions through multi-month builds.</li>
+          <li data-t="client">Planned and ran discovery workshops across eight projects (logistics, SaaS, real estate, construction), each converted into a structured scope and delivery plan.</li>
+        </ul>
+        <h3>Legacy GTM technology and migration</h3>
+        <ul class="pts">
+          <li data-t="client build">Led a change-management programme migrating a global travel business from Salesforce Classic to Lightning, owning discovery, analysis, deployment and training end to end.</li>
+          <li data-t="client">Owned the Group Sales backlog in a 900+ licence, multi-cloud, multi-brand global org, prioritising against portfolio-level business goals.</li>
+          <li data-t="build">Defined data recipes and integrations (SAQL, Informatica ETL, Heroku) alongside technical teams.</li>
+        </ul>
+        <h3>Custom solutions on a workflow platform</h3>
+        <ul class="pts">
+          <li data-t="build">Designed a sales-target enhancement combining screen flows and a custom ETL data pipeline, adopted by global B2B Sales teams and cutting upfront admin time by 95%.</li>
+          <li data-t="build">Built automation with Flow Builder, a case-creation screen-flow process for telephone agents, and a CRM Analytics dashboard for Call Centre agents.</li>
+          <li data-t="build client">Directed a delivery team (developer, solution architect, junior consultant) building a custom patient onboarding and lifecycle app.</li>
+        </ul>
+        <h3>AI and product feedback</h3>
+        <ul class="pts">
+          <li data-t="ai">Anthropic Claude Certified Architect – Foundations (CCAR-F). Salesforce AI Consultant and Data Cloud Consultant certified.</li>
+          <li data-t="ai build">Built a custom analytics agent combining Salesforce platform depth with Anthropic product knowledge for a client engagement.</li>
+          <li data-t="build client">Turned customer goals into clear user stories with acceptance criteria that engineering could build against.</li>
+        </ul>
+        <h3>Implementation, adoption and enablement</h3>
+        <ul class="pts">
+          <li data-t="enable">Authored system documentation, training materials and train-the-trainer programmes across multiple engagements, and trained groups of 10–15 end users to drive adoption after go-live.</li>
+          <li data-t="enable build">Took over a Salesforce org as internal admin after the implementation consultancy left, delivering a 25% increase in throughput and clearing a maintenance backlog.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Senior Salesforce Functional Consultant</span>
+            <span class="job-date">Apr 2025 – present</span>
+            <span class="job-org">R3 Digital, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="client build">Own end-to-end implementations across Sales, Service and Experience Cloud, aligned to client objectives and measurable operational improvement.</li>
+            <li data-t="client">Facilitate strategic workshops with C-level executives, translating business needs into technical roadmaps and architecture documentation.</li>
+            <li data-t="ai build">Build AI and agentic solutions on the Salesforce platform using Anthropic's models.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Salesforce Product Owner, Group Sales</span>
+            <span class="job-date">Apr 2024 – Apr 2025</span>
+            <span class="job-org">The Travel Corporation, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="client">Owned the Group Sales product backlog within a 900+ licence, multi-cloud, multi-brand global org.</li>
+            <li data-t="client enable">Led the Classic-to-Lightning change programme end to end: discovery, analysis, deployment and training.</li>
+            <li data-t="build">Designed a sales-target enhancement (screen flows and Informatica ETL) adopted by global B2B Sales teams, cutting upfront admin time by 95%.</li>
+            <li data-t="build">Built a CRM Analytics customer dashboard for Call Centre agents, defining custom SAQL data recipes end to end.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Interim Salesforce Admin (fixed-term contract)</span>
+            <span class="job-date">Feb 2024 – Apr 2024</span>
+            <span class="job-org">Crisis24, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="build">Provided interim admin cover on a global org (500+ licences) for a SaaS and insurance company.</li>
+            <li data-t="build">Built a case-creation screen-flow process for telephone agents and managed day-to-day data quality and QA.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Senior Salesforce Consultant</span>
+            <span class="job-date">Nov 2022 – Dec 2023</span>
+            <span class="job-org">Atlantic Technologies, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="client">Lead consultant on a Sales Cloud project for a Health &amp; Life Sciences client, owning requirements, sprint prioritisation and stakeholder communication.</li>
+            <li data-t="build client">Directed a delivery team (developer, solution architect, junior consultant) building a custom patient onboarding and lifecycle app.</li>
+            <li data-t="client enable">Delivered stakeholder demos and weekly progress updates, and led training for 10–15 end users.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Salesforce Consultant</span>
+            <span class="job-date">May 2022 – Nov 2022</span>
+            <span class="job-org">Alicorn Digital, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="client build">Delivered 8 projects across logistics, SaaS, real estate and construction, each scoped through discovery workshops and delivered as reports, dashboards and Flow Builder automation.</li>
+            <li data-t="enable">Ran train-the-trainer and end-user training sessions to support adoption.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Functional Salesforce Consultant</span>
+            <span class="job-date">Nov 2021 – May 2022</span>
+            <span class="job-org">EPAM – Polsource, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="client build">Supported an enterprise-scale Experience Cloud implementation for car dealerships, working daily with internal and C-level external stakeholders.</li>
+          </ul>
+        </details>
+
+        <details class="job" open>
+          <summary>
+            <span class="job-title">Contracts Delivery Lead / Internal Salesforce Admin</span>
+            <span class="job-date">Apr 2017 – Nov 2021</span>
+            <span class="job-org">Cyclehoop Ltd, London</span>
+            <span class="job-toggle"></span>
+          </summary>
+          <ul class="pts">
+            <li data-t="build enable">Took ownership of the Salesforce org as internal admin after the implementation consultancy left, driving further process and technical enhancement.</li>
+            <li data-t="build">Achieved a 25% increase in throughput and cleared a maintenance backlog; supervised and mentored a team of 5.</li>
+          </ul>
+        </details>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>
+            <strong>Anthropic Claude Certified Architect – Foundations</strong>
+            <div class="sub">CCAR-F</div>
+          </li>
+          <li>
+            <strong>Salesforce</strong>
+            <div class="sub">21 certifications, including AI Consultant and Data Cloud Consultant</div>
+          </li>
+          <li>
+            <strong>PRINCE2</strong>
+            <div class="sub">Project Management</div>
+          </li>
+          <li>
+            <strong>Tableau Desktop Specialist</strong>
+          </li>
+          <li>
+            <strong>Salesforce Pathfinder Program</strong>
+            <div class="sub">Jun–Nov 2021, one of 50 UK participants</div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical skills</h2>
+        <ul>
+          <li>Salesforce Sales, Service, Experience and Data Cloud; CRM Analytics</li>
+          <li>Flow Builder, SAQL, Informatica ETL, Heroku</li>
+          <li>Anthropic Claude, agentic workflow design, Claude Code</li>
+          <li>Legacy CRM migration and integration design</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p><strong>University of Nottingham</strong></p>
+        <p class="sub">B.A. (Hons) Geography, 2.1<br>2008–2012</p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('ul.pts li[data-t]');
+  var status = document.getElementById('status');
+  var labels = { client: 'client-facing', build: 'building solutions', ai: 'AI', enable: 'training and adoption' };
+
+  function apply(tag) {
+    var n = 0;
+    items.forEach(function (li) {
+      var tags = li.getAttribute('data-t').split(' ');
+      var match = tag === 'all' || tags.indexOf(tag) !== -1;
+      li.classList.toggle('dim', !match);
+      li.classList.toggle('hit', tag !== 'all' && match);
+      if (match) n++;
+    });
+    chips.forEach(function (c) {
+      c.setAttribute('aria-pressed', c.getAttribute('data-tag') === tag ? 'true' : 'false');
+    });
+    status.textContent = tag === 'all' ? '' : n + ' points on ' + labels[tag];
+  }
+
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () { apply(c.getAttribute('data-tag')); });
+  });
+  apply('all');
+
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.getAttribute('data-target'));
+      var text = el.textContent;
+      function select() {
+        var r = document.createRange();
+        r.selectNodeContents(el);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        btn.textContent = 'Selected';
+      }
+      function done() { btn.textContent = 'Copied'; }
+      try {
+        navigator.clipboard.writeText(text).then(done, select);
+      } catch (e) {
+        select();
+      }
+      setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+    });
+  });
+})();
+</script>
+
+</body></html>
